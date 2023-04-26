@@ -6,6 +6,7 @@ import third from './img/third.png'
 import four from './img/four.png'
 import five from './img/five.png'
 import six from './img/six.png'
+import seven from './img/seven.png'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <img src={four} alt="logo" className='image'/>
         <img src={five} alt="logo" className='image'/>
         <img src={six} alt="logo" className='image'/>
+        <img src={seven} alt="logo" className='image'/>
     
     </div>
   );
