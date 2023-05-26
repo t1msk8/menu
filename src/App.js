@@ -7,7 +7,7 @@ import React, {
   createRef,
 } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Ground } from "./components";
+import { Ground, Footer } from "./components";
 import Hamburger from "hamburger-react";
 import {
   Button,
@@ -15,7 +15,7 @@ import {
   Grid,
   ImageList,
   ImageListItem,
-  AppBar,
+  AppBar,useMediaQuery
 } from "@mui/material";
 import "./App.css";
 import {
@@ -24,7 +24,6 @@ import {
   OrbitControls,
   PerspectiveCamera,
 } from "@react-three/drei";
-import { useMediaQuery } from "@mui/material";
 import * as THREE from "three";
 import { Parallax, Background } from "react-parallax";
 import { styled } from "@mui/system";
@@ -446,7 +445,7 @@ function App() {
                 </React.Fragment>
               ))}
             </Box>
-
+           <Footer />         
             <Background style={{ width: "100%", height: "100%" }}>
               <div style={styles}></div>
             </Background>
