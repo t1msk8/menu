@@ -17,6 +17,7 @@ a {
   src: local("RussoOne"),
     url(./assets/fonts/RussoOne-Regular.ttf) format("opentype");
 }
+
 @font-face {
   font-family: "PoiretOne";
   src: local("PoiretOne"),

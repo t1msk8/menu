@@ -17,17 +17,17 @@ export const Footer = () => {
       }}
     >
       <Box sx={{ flex: 1, alignSelf: "center" }}>
-        <a href='https://instagram.com/hpomsk'>
+        <a href="https://instagram.com/hpomsk">
           <InstagramIcon
             sx={{ color: "white", height: "35px", width: "35px", mr: 2 }}
           />
         </a>
-        <a href='https://t.me/+VyMMi20TP96JOQGn'>
+        <a href="https://t.me/+VyMMi20TP96JOQGn">
           <TelegramIcon
             sx={{ color: "white", height: "35px", width: "35px", mr: 2 }}
           />
         </a>
-        <a href='https://vk.com/ex_hpomsk'>
+        <a href="https://vk.com/ex_hpomsk">
           <VkIcon />
         </a>
       </Box>
@@ -43,7 +43,7 @@ export const Footer = () => {
         <Box sx={{ display: "flex" }}>
           <PhoneEnabledIcon sx={{ color: "white" }} />
           <Typography sx={{ color: "white", fontFamily: "PoiretOne", ml: 1 }}>
-            <a  href="tel:+73812381925">+7 (3812) 38-19-25</a>
+            <a href="tel:+73812381925">+7 (3812) 38-19-25</a>
           </Typography>
         </Box>
       </Box>

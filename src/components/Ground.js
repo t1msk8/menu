@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLoader } from "@react-three/fiber";
-import { MeshReflectorMaterial, useGLTF  } from "@react-three/drei";
+import { MeshReflectorMaterial, useGLTF } from "@react-three/drei";
 import { RepeatWrapping, TextureLoader } from "three";
 import * as THREE from "three";
 
@@ -8,10 +8,10 @@ export const Ground = () => {
   const [roughness, normal, black] = useLoader(TextureLoader, [
     process.env.PUBLIC_URL + "textures/terrain-roughness.jpg",
     process.env.PUBLIC_URL + "textures/terrain-normal.jpg",
-    process.env.PUBLIC_URL + "textures/terrain-grey.jpg"
+    process.env.PUBLIC_URL + "textures/terrain-grey.jpg",
   ]);
 
-const { scene } = useGLTF("./logo/hookaRED.glb")
+  const { scene } = useGLTF("./logo/hookaRED.glb");
   useEffect(() => {
     [roughness, normal].forEach((t) => {
       t.wrapS = RepeatWrapping;
@@ -22,7 +22,6 @@ const { scene } = useGLTF("./logo/hookaRED.glb")
 
     [black].forEach((t) => {
       t.repeat.set(1, 1);
-      
     });
   }, [roughness, normal, black]);
 
@@ -38,11 +37,7 @@ const { scene } = useGLTF("./logo/hookaRED.glb")
         map={black}
       />
 
-<primitive
-        object={scene}
-        position={[0, 0, 3]}
-        rotation={[-4.8, 0, 0]}
-      />
+      <primitive object={scene} position={[0, 0, 3]} rotation={[-4.8, 0, 0]} />
     </mesh>
   );
 };

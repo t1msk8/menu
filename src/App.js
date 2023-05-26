@@ -15,7 +15,8 @@ import {
   Grid,
   ImageList,
   ImageListItem,
-  AppBar,useMediaQuery
+  AppBar,
+  useMediaQuery,
 } from "@mui/material";
 import "./App.css";
 import {
@@ -366,13 +367,19 @@ function App() {
                 </React.Fragment>
               ))}
               <Grid container ref={wineRef}>
-                <Title sx={{fontSize: '30px'}} id="#Вино">Вино</Title>
+                <Title sx={{ fontSize: "30px" }} id="#Вино">
+                  Вино
+                </Title>
                 {wine.map((elem, index) => (
                   <Grid item xs={index === 2 ? 12 : 6} key={index}>
-                    <Title sx={{fontSize: '25px'}}>{elem.title}</Title>
+                    <Title sx={{ fontSize: "25px" }}>{elem.title}</Title>
                     {elem.position.map((position) => (
                       <PositionBox sx={{ flexDirection: "column", py: 2 }}>
-                        <PositionName sx={{fontWeight: 700, letterSpacing: '2px' }}>{position.name}</PositionName>
+                        <PositionName
+                          sx={{ fontWeight: 700, letterSpacing: "2px" }}
+                        >
+                          {position.name}
+                        </PositionName>
                         <PositionDesc>{position.desc}</PositionDesc>
                         <PositionPrice>{position.price}</PositionPrice>
                       </PositionBox>
@@ -383,12 +390,16 @@ function App() {
 
               {whiskey.map((elem, index) => (
                 <React.Fragment key={index}>
-                  <Title id="#Виски" ref={whiskeyRef} sx={{ fontSize: '30px'}}>
+                  <Title id="#Виски" ref={whiskeyRef} sx={{ fontSize: "30px" }}>
                     {elem.title}
                   </Title>
                   {elem.position.map((position) => (
                     <PositionBox sx={{ flexDirection: "column", py: 2 }}>
-                      <PositionName sx={{fontWeight: 700, letterSpacing: '2px' }}>{position.name}</PositionName>
+                      <PositionName
+                        sx={{ fontWeight: 700, letterSpacing: "2px" }}
+                      >
+                        {position.name}
+                      </PositionName>
                       <PositionPrice>{position.desc}</PositionPrice>
                       <PositionPrice>{position.price}</PositionPrice>
                     </PositionBox>
@@ -404,7 +415,11 @@ function App() {
                 ref={alcoRef}
               >
                 {alco.map((elem, index) => (
-                  <ImageListItem cols={1} rows={index === 0 ? 2 : 1} key={index}>
+                  <ImageListItem
+                    cols={1}
+                    rows={index === 0 ? 2 : 1}
+                    key={index}
+                  >
                     <Title>{elem.title}</Title>
                     {elem.position.map((position) => (
                       <PositionBox sx={{ py: "4px" }}>
@@ -427,15 +442,22 @@ function App() {
               {cocktails.map((elem, index) => (
                 <React.Fragment key={index}>
                   <Title
-                    sx={{ mt: 4, mb: 1, fontSize: '30px' }}
+                    sx={{ mt: 4, mb: 1, fontSize: "30px" }}
                     id="#Алкогольные коктейли"
-                    ref={cocktailsRef}                   
+                    ref={cocktailsRef}
                   >
                     {elem.title}
                   </Title>
                   {elem.position.map((position, index) => (
-                    <PositionBox sx={{ flexDirection: "column", py: 1 }} key={index}>
-                      <PositionName sx={{fontWeight: 700, letterSpacing: '2px' }}>{position.name}</PositionName>
+                    <PositionBox
+                      sx={{ flexDirection: "column", py: 1 }}
+                      key={index}
+                    >
+                      <PositionName
+                        sx={{ fontWeight: 700, letterSpacing: "2px" }}
+                      >
+                        {position.name}
+                      </PositionName>
                       <PositionPrice sx={{ fontSize: "16px" }}>
                         {position.desc}
                       </PositionPrice>
@@ -445,7 +467,7 @@ function App() {
                 </React.Fragment>
               ))}
             </Box>
-           <Footer />         
+            <Footer />
             <Background style={{ width: "100%", height: "100%" }}>
               <div style={styles}></div>
             </Background>
