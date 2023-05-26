@@ -226,7 +226,7 @@ function App() {
 
   const nonAlcoholRefs = useMemo(
     () => Array.from({ length: nonAlcohol.length }).map(() => createRef()),
-    [nonAlcohol]
+    []
   );
   const wineRef = useRef(null);
   const whiskeyRef = useRef(null);
@@ -305,6 +305,8 @@ function App() {
               <img
                 src={"/textures/logo.png"}
                 style={{ height: "80px", width: "80px" }}
+                alt="logo"
+                onClick={() => window.scrollTo(0, 0)}
               />
             </Box>
           </AppBar>
