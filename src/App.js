@@ -34,6 +34,7 @@ import {
   whiskey,
   alco,
   cocktails,
+  tinctures,
   navs,
 } from "./assets/mock/menu";
 import useScrollBlock from "./hooks/useScrollBlock";
@@ -219,6 +220,9 @@ function App() {
       case 6:
         window.scrollTo(0, cocktailsRef.current?.offsetTop - 120);
         break;
+      case 7:
+        window.scrollTo(0, tincturesRef.current?.offsetTop - 120);
+        break;
     }
 
     setOpen(false);
@@ -232,6 +236,7 @@ function App() {
   const whiskeyRef = useRef(null);
   const alcoRef = useRef(null);
   const cocktailsRef = useRef(null);
+  const tincturesRef = useRef(null);
   const contentRef = useRef(null);
 
   const [value, setValue] = useState(false);
@@ -468,6 +473,35 @@ function App() {
                   ))}
                 </React.Fragment>
               ))}
+
+              {tinctures.map((elem, index) => (
+                <React.Fragment key={index}>
+                  <Title
+                    sx={{ mt: 4, mb: 1, fontSize: "30px" }}
+                    id="#Настойки"
+                    ref={tincturesRef}
+                  >
+                    {elem.title}
+                  </Title>
+                  {elem.position.map((position, index) => (
+                    <PositionBox
+                      sx={{ flexDirection: "column", py: 1 }}
+                      key={index}
+                    >
+                      <PositionName
+                        sx={{ fontWeight: 700, letterSpacing: "2px" }}
+                      >
+                        {position.name}
+                      </PositionName>
+                      <PositionPrice sx={{ fontSize: "16px" }}>
+                        {position.desc}
+                      </PositionPrice>
+                      <PositionPrice>{position.price}</PositionPrice>
+                    </PositionBox>
+                  ))}
+                </React.Fragment>
+              ))}
+
             </Box>
             <Footer />
             <Background style={{ width: "100%", height: "100%" }}>
