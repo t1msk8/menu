@@ -199,6 +199,7 @@ function App() {
     allowScroll();
 
     switch (index) {
+      
       case 0:
         window.scrollTo(0, nonAlcoholRefs[0].current?.offsetTop - 120);
         break;

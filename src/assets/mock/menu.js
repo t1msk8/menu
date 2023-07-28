@@ -84,15 +84,19 @@ export const nonAlcohol = [
     position: [
       {
         name: "Вишня Базилик",
-        price: 350,
+        price: 400,
       },
       {
         name: "Облепиха Мед",
-        price: 350,
+        price: 400,
       },
       {
         name: "Малина Мята",
-        price: 450,
+        price: 400,
+      },
+      {
+        name: "Клюква Розмарин Грейпфрут",
+        price: 400,
       },
     ],
   },
@@ -100,6 +104,10 @@ export const nonAlcohol = [
   {
     title: "Кофе",
     position: [
+      {
+        name: "Эспрессо",
+        price: 100,
+      },
       {
         name: "Американо",
         price: 100,
