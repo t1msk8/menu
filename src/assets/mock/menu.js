@@ -323,6 +323,11 @@ export const wine = [
     title: "Игристое",
     position: [
       {
+        name: "ЛА ДЖОЙЗА ПРОССЕКО ТРЕВИЗО",
+        desc: "Игристое вино брют белое, D.O.C.",
+        price: "2200",
+      },
+      {
         name: "КАВА РОНДЕЛЬ",
         desc: "Игристое вино брют белое",
         price: "1900",
@@ -386,6 +391,7 @@ export const alco = [
     title: "Пиво и Сидр",
     position: [
       { name: "Сидр №3 полусладкий", price: "390" },
+      { name: "IPA", price: "390" },
       /*{ name: "Грин Кинг ИПА", price: "390" },
       { name: "Эббот Эль", price: "390" },*/
       { name: "Милк Оф Амнезия", price: "350" },
