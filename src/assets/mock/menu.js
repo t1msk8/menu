@@ -391,7 +391,7 @@ export const alco = [
     title: "Пиво и Сидр",
     position: [
       { name: "Сидр №3 полусладкий", price: "390" },
-      { name: "IPA", price: "390" },
+      { name: "IPA", price: "400" },
       /*{ name: "Грин Кинг ИПА", price: "390" },
       { name: "Эббот Эль", price: "390" },*/
       { name: "Милк Оф Амнезия", price: "350" },
