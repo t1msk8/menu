@@ -49,7 +49,7 @@ export const nonAlcohol = [
         price: 300,
       },
       {
-        name: "Те Гуань Инь",
+        name: "Те Гуань Ин",
         price: 300,
       },
       {
