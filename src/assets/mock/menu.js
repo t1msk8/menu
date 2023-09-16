@@ -7,7 +7,7 @@ export const nonAlcohol = [
         price: 800,
       },
       {
-        name: "Кальян после 17:00",
+        name: "Кальян",
         price: 1200,
       },
     ],
