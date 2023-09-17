@@ -307,7 +307,7 @@ function App() {
               />
             </Box>
 
-            <Box sx={{ flex: 1, textAlign: "center", font-family: "PoiretOne"; }}>
+            <Box sx={{ flex: 1, textAlign: "center" }}>
               <img
                 src={"/textures/logo.png"}
                 style={{ height: "80px", width: "80px" }}
