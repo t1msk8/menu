@@ -3,7 +3,7 @@ export const nonAlcohol = [
     title: "КАЛЬЯНЫ",
     position: [
       {
-        name: "Бизнес ( Пн - Пт 13:00 - 17:00)",
+        name: "Бизнес (Пн - Пт 13:00 - 17:00)",
         price: 800,
       },
       {
