@@ -562,13 +562,13 @@ export const cocktails = [
       {
         name: "КИР РОЯЛЬ",
         desc: "Ликер Черная Смородина / Просекко",
-        price: 350,
+        price: 450,
       },
 
       {
         name: "ФРЕНЧ 75",
         desc: "Джин / Просекко / Сок Лайма",
-        price: 350,
+        price: 450,
       },
       {
         name: "ЛИМОНЧЕЛЛО СПРИТЦ",
@@ -626,7 +626,7 @@ export const tinctures = [
       },
       
       {
-        name: "МОЛОЧНЫЙ УЛУН", price: "200"
+        name: "МОЛОЧНЫЙ УЛУН", price: "150"
       },
       
     ],
