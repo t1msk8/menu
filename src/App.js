@@ -382,7 +382,7 @@ function App() {
                   <Grid item xs={index === 2 ? 12 : 6} key={index}>
                     <Title sx={{ fontSize: "25px" }}>{elem.title}</Title>
                     {elem.position.map((position) => (
-                      <PositionBox sx={{ flexDirection: "column", py: 4 }}>
+                      <PositionBox sx={{ flexDirection: "row", py: 2 }}>
                         <PositionName
                           sx={{ fontWeight: 700, letterSpacing: "2px" }}
                         >
