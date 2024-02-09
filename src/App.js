@@ -417,7 +417,7 @@ function App() {
 
               <ImageList
                 variant="quilted"
-                cols={2}
+                cols={1}
                 gap={14}
                 id="#Крепкие напитки"
                 ref={alcoRef}
