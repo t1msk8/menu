@@ -379,10 +379,10 @@ function App() {
                   Вино
                 </Title>
                 {wine.map((elem, index) => (
-                  <Grid item xs={index === 2 ? 12 : 6} key={index}>
+                  <Grid item xs={index === 4 ? 12 : 6} key={index}>
                     <Title sx={{ fontSize: "25px" }}>{elem.title}</Title>
                     {elem.position.map((position) => (
-                      <PositionBox sx={{ flexDirection: "column", py: 1 }}>
+                      <PositionBox sx={{ flexDirection: "column", py: 2 }}>
                         <PositionName
                           sx={{ fontWeight: 700, letterSpacing: "2px" }}
                         >
